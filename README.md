@@ -1,12 +1,11 @@
-# js-lab-148
-### Lab 148 ES6: รวม nums1 และ num2
-- จงรวม nums1 และ num2 เข้าด้วยกัน
-- จงสร้าง array ที่ได้จากการนำ nums1 และ nums2 มารวมกัน แต่ให้เพิ่ม 5 เข้าไปก่อน nums1 และเพิ่ม -6, -1 เข้าไประหว่าง nums1 กับ nums2
-- หาผลรวมของทุก element ใน Array ที่ได้
+# js-lab-149
+### Lab 149 ES6: ฟังก์ชันที่ใช้คุณสมบัติของ Spread operator
+จงเขียนฟังก์ชันที่ใช้คุณสมบัติของ Spread operator เพื่อรับค่า array1แล้วคืนค่าเป็น array ที่มีการเปลี่ยนแปลงค่าของ index ที่ 3 ให้มีค่าเท่ากับ ค่าเดิมยกกำลัง 2 โดยที่ array1 ไม่เกิดการเปลี่ยนแปลง
 
 ```JavaScript
-const nums1 = [1, -2, 3, 4];
-const nums2 = [8, 3, -8, 1];
+const array1 = [1, 2, 3, 4, 5];
+const modifiedArray = modifyArray(array1);
 
-// [5, 1, -2, 3, 4, -6, -1, 8, 3, -8, 1]
+console.log(array1); // [1, 2, 3, 4, 5]
+console.log(modifiedArray); // [1, 2, 3, 16, 5]
 ```
